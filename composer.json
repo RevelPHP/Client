@@ -1,0 +1,37 @@
+{
+    "name": "revelphp/client",
+    "description": "A PHP API client for Revel POS.",
+    "autoload": {
+        "psr-4": {
+            "RevelPHP\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RevelPHP\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php-http/discovery": "^1.14",
+        "php-http/httplug": "^2.3",
+        "php-http/client-common": "^2.5",
+        "illuminate/collections": "^9.12"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "larapack/dd": "^1.1",
+        "guzzlehttp/guzzle": "^7.4",
+        "aidan-casey/mock-client": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aidan Casey",
+            "email": "aidan.casey@anteris.com"
+        }
+    ],
+    "scripts": {
+        "test": "./vendor/bin/phpunit",
+        "coverage": "./vendor/bin/phpunit --coverage-html ./build/coverage"
+    }
+}
